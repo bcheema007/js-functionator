@@ -10,7 +10,7 @@ h1.setAttribute('style', 'position:sticky;top:0;margin-top:0');
 const div = document.createElement('div');
 document.body.appendChild(div);
 div.setAttribute('style', 'box-sizing:border-box;position:absolute;background-color:blue;width:100px;height:100px;color:white;text-align:center;line-height:100px;font-weight:1000');
-div.innerHTML = 'Hello World!';
+div.innerHTML = 'Hello';
 
 // change the position of the div element at the start
 div.style.left = div.getBoundingClientRect().x + 42 + 'px';
