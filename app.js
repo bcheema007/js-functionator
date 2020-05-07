@@ -70,25 +70,27 @@ document.addEventListener('keydown', function(event) {
 
 function moveElement() {
 
+    let value = 30;
+
     if(keySequence[0] === 37) {
         deleteSpan(0);
         keySequence.shift();
-        div.style.left = div.getBoundingClientRect().x - 20 + 'px';
+        div.style.left = div.getBoundingClientRect().x - value + 'px';
     }
     else if(keySequence[0] === 38) {
         deleteSpan(0);
         keySequence.shift();
-        div.style.top = div.getBoundingClientRect().y - 20 + 'px';
+        div.style.top = div.getBoundingClientRect().y - value + 'px';
     }
     else if(keySequence[0] === 39) {
         deleteSpan(0);
         keySequence.shift();
-        div.style.left = div.getBoundingClientRect().x + 20 + 'px';
+        div.style.left = div.getBoundingClientRect().x + value + 'px';
     }
     else if(keySequence[0] === 40) {
         deleteSpan(0);
         keySequence.shift();
-        div.style.top = div.getBoundingClientRect().y + 20 + 'px';
+        div.style.top = div.getBoundingClientRect().y + value + 'px';
     }
 
     if(keySequence.length === 0) {
